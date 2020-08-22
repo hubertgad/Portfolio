@@ -59,3 +59,5 @@ C:\Users\player_one\source\repos\Portfolio\obj\Debug\netcoreapp3.1\RazorDeclarat
 C:\Users\player_one\source\repos\Portfolio\obj\Debug\netcoreapp3.1\Razor\Pages\Projects\Project3.razor.g.cs
 C:\Users\player_one\source\repos\Portfolio\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\ProgressBar.razor.g.cs
 C:\Users\player_one\source\repos\Portfolio\obj\Debug\netcoreapp3.1\Razor\Shared\ProgressBar.razor.g.cs
+C:\Users\player_one\source\repos\Portfolio\obj\Debug\netcoreapp3.1\RazorDeclaration\Shared\Block.razor.g.cs
+C:\Users\player_one\source\repos\Portfolio\obj\Debug\netcoreapp3.1\Razor\Shared\Block.razor.g.cs
