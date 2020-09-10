@@ -72,6 +72,13 @@ using Portfolio.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 10 "C:\Users\player_one\source\repos\Portfolio\_Imports.razor"
+using BlazorAnimate;
+
+#line default
+#line hidden
+#nullable disable
     public partial class Footer : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998

@@ -1,0 +1,11 @@
+﻿<Animate Animation="Animations.ZoomIn" Duration="TimeSpan.FromSeconds(2)" Delay="TimeSpan.FromSeconds(Delay)">
+    <p class="h4 my-3 text-center">
+        @ChildContent
+    </p>
+</Animate>
+
+@code {
+    [Parameter] public RenderFragment ChildContent { get; set; }
+    [Parameter] public string Content { get; set; }
+    [Parameter] public double Delay { get; set; }
+}

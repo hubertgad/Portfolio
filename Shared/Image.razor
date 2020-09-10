@@ -1,0 +1,14 @@
+﻿<div class="col-3 col-sm-2 p-1 mx-1 utility">
+    <Animate Animation="Animations.Fade" Duration="TimeSpan.FromSeconds(2)" Delay="TimeSpan.FromSeconds(Delay)">
+        <img src="@Src"
+                alt="@Alt" />
+        <p class="py-1">@Title</p>
+    </Animate>
+</div>
+
+@code {
+    [Parameter] public string Src { get; set; }
+    [Parameter] public string Alt { get; set; }
+    [Parameter] public string Title { get; set; }
+    [Parameter] public double Delay { get; set; } = 0;
+}

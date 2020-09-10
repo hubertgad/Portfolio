@@ -5,19 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="wwwroot\create.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="wwwroot\create.png" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <PackageReference Include="BlazorAnimate" Version="2.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="2.2.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="wwwroot\create.png" />
   </ItemGroup>
 
 </Project>

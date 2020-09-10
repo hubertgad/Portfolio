@@ -72,6 +72,13 @@ using Portfolio.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 10 "C:\Users\player_one\source\repos\Portfolio\_Imports.razor"
+using BlazorAnimate;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/contact")]
     public partial class Contact : Microsoft.AspNetCore.Components.ComponentBase
     {

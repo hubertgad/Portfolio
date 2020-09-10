@@ -3,34 +3,11 @@
 @inject NavigationManager _navManager
 
 <div class="text-center">
-    <h1><span class="orange">Please</span>, feel free to see my work.</h1>
+    <h4><span class="orange">Please</span>, feel free to see my work.</h4>
 </div>
 
 <div class="container row mx-auto">
-    <div class="col-12 col-md-6 col-xl-4 px-4 project">
-        <div>
-            <a href="/projects/1">
-                <img src="https://i.pinimg.com/originals/f5/1d/08/f51d08be05919290355ac004cdd5c2d6.png" class="img-fluid" />
-                <p>Project 1 - Software installer (WPF)</p>
-            </a>
-        </div>
-    </div>
-
-    <div class="col-12 col-md-6 col-xl-4 px-4 project">
-        <div>
-            <a href="/projects/2">
-                <img src="https://i.pinimg.com/originals/f5/1d/08/f51d08be05919290355ac004cdd5c2d6.png" class="img-fluid" />
-                <p>Project 2 - Questionbank (ASP.NET MVC)</p>
-            </a>
-        </div>
-    </div>
-
-    <div class="col-12 col-md-6 col-xl-4 px-4 project">
-        <div>
-            <a href="/projects/3">
-                <img src="https://i.pinimg.com/originals/f5/1d/08/f51d08be05919290355ac004cdd5c2d6.png" class="img-fluid" />
-                <p>Project 3 - flatmates.space (ASP.NET Blazor)</p>
-            </a>
-        </div>
-    </div>
+    <Project Href="/projects/p1" Title="Software installer (WPF)" Image="/images/polyzyngerIcon.png" />
+    <Project Href="/projects/p2" Title="Questionbank (Razor Pages)" Image="/images/repeatIcon.png" Delay="0.1" />
+    <Project Href="/projects/p3" Title="Flatmates matcher (ASP.NET Blazor)" Image="/images/inMateIcon.png" Delay="0.2" />
 </div>

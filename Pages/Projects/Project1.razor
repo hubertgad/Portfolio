@@ -1,23 +1,69 @@
-﻿@page "/projects/1"
+﻿@page "/projects/p1"
 
-<div class="mb-3">
-    <NavLink class="btn btn-content" href="/projects" Match="NavLinkMatch.All">Go back to projects</NavLink>
+<div class="container vw-100">
+    <div class="mb-3">
+        <NavLink class="btn btn-content" href="/projects" Match="NavLinkMatch.All">Go back to projects</NavLink>
+    </div>
+
+    <p><h3>Software installer for Windows 10 - <span class="polyzynger">Polyzynger</span></h3></p>
+
+    <div class="my-2">
+        <h3>What?</h3>
+        <span>
+            Polyzynger is a simple WPF application that <b>finds</b> the latest version, <b>downloads</b> and <b>installs</b> software on Windows.
+            Also, it additionally copies some resources and executes PowerShell scripts if necessary.
+            To ensure that it will easily run even on an older and not updated Windows OS <b class="polyzynger">Polyzynger</b> uses .NET Framework 4.7.
+        </span>
+    </div>
+
+    <div class="my-2">
+        <h3>Why?</h3>
+        <span>
+            I have created it to make work in my department easier and faster.
+        </span>
+    </div>
+
+    <div class="my-2">
+        <h3>How?</h3>
+        <span>It works in simple steps, @@foreach selected application:</span>
+        <ul>
+            <li>
+                <span>
+                    (If necessary) scan demanded product's official website to check if there is a newer version. For this purpose use <b>Regex</b>.
+                    If somethings new has come, estabilish new download link and check it.
+                </span>
+            </li>
+            <li>
+                <span>
+                    Using <b>WebClient</b> download installer and save it in a temporary directory.
+                </span>
+            </li>
+            <li>
+                <span>
+                    Silently <b>install</b> the application.
+                </span>
+            </li>
+            <li>
+                <span>
+                    Delete temporary files.
+                </span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="my-2">
+        <h3>Pictures</h3>
+        <PhotoGallery Images="Images" />
+    </div>
+
+    <div class="my-2">
+        <h3>Resources</h3>
+        <button class="btn btn-content">Download Link</button>
+        <button class="btn btn-content">GitHub Repository</button>
+    </div>
 </div>
-
-<h3>Software installer for Windows 10 - <span class="polyzynger">Polyzynger</span></h3>
-
-<div>
-    <h3>What</h3>
-    <hr />
-</div>
-<div class="row">BLBLBL</div>
-
-<Block Title="Test title" Content="Test content" />
-<Block Title="Test title" Content="Test content" />
-<Block Title="Test title" Content="Test content" />
-
-
 
 @code {
-
+    public List<string> Images { get; set; } = new List<string>
+        { "/images/polyzynger.png", "/images/polyzynger2.png" };
 }

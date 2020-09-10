@@ -1,0 +1,16 @@
+﻿<div class="col-4 col-md-3 col-lg-2 col-xl-2">
+    <Animate Animation="Animations.Fade" Duration="TimeSpan.FromSeconds(2)" Delay="TimeSpan.FromSeconds(Delay)">
+        <a class="link" href="@Href">
+            <img class="img-fluid"
+                 src="@Img"
+                 alt="@Alt" />
+        </a>
+    </Animate>
+</div>
+
+@code {
+    [Parameter] public string Href { get; set; }
+    [Parameter] public string Img { get; set; }
+    [Parameter] public string Alt { get; set; }
+    [Parameter] public double Delay { get; set; } = 0;
+}

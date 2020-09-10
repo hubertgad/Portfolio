@@ -1,0 +1,24 @@
+﻿<div class="col-12 col-md-6 col-xl-4 px-4 project my-auto">
+    <Animate Animation="Animations.Fade" Duration="TimeSpan.FromSeconds(2)" Delay="TimeSpan.FromSeconds(Delay)">
+        <a href="@Href">
+            <img src="@Image" class="img-fluid" />
+            <p class="mt-auto">@Title</p>
+        </a>
+</Animate>
+</div>
+
+@code {
+    [Parameter] public string Href { get; set; }
+    [Parameter] public string Title { get; set; }
+    [Parameter] public string Image { get; set; }
+    [Parameter] public double Delay { get; set; } = 0;
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+        if (string.IsNullOrEmpty(Image))
+        {
+            Image = "/images/pika.png";
+        }
+    }
+}

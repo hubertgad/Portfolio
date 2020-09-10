@@ -1,58 +1,77 @@
 ﻿@page "/about"
 
 <div class="text-center">
-    <h1>What I <span class="orange">know</span>:</h1>
 
     <div class="row">
-        <h5>Technologies:</h5>
+        <div><h5>Certifications and exams I have passed:</h5></div>
     </div>
-    <div class="row mb-4">
-        <ProgressBar Name="ASP.NET Core Blazor" Value="80" />
-        <ProgressBar Name="ASP.NET Core MVC" Value="70" />
-        <ProgressBar Name=".NET Core WPF" Value="70" />
-    </div>
-
-    <div class="row">
-        <h5>Languages and frameworks:</h5>
-    </div>
-    <div class="row mb-4">
-        <ProgressBar Name="English 🙂" Value="85" />
-        <ProgressBar Name="C#" Value="80" />
-        <ProgressBar Name="Entity Framework" Value="75" />
-        <ProgressBar Name="SQL" Value="75" />
-        <ProgressBar Name="HTML / CSS" Value="70" />
-        <ProgressBar Name="Bootstrap" Value="60" />
-        <ProgressBar Name="ASP.NET Core Identity" Value="40" />
-        <ProgressBar Name="Java" Value="40" />
-        <ProgressBar Name="C++" Value="40" />
-    </div>
-        <div class="row">
-        <h5>Design patterns:</h5>
-    </div>
-    <div class="row mb-4">
-        <ProgressBar Name="Dependency injection" Value="100" />
-        <ProgressBar Name="DDD" Value="100" />
-        <ProgressBar Name="CQRS" Value="100" />
-        <ProgressBar Name="MVVM" Value="100" />
-        <ProgressBar Name="MVC" Value="100" />
+    <div class="row mb-3">
+        <Badge Href="https://www.youracclaim.com/badges/a683933e-c79a-4cae-9dea-a71b705a57ce"
+               Img="https://images.youracclaim.com/size/680x680/images/4178e678-e9c8-42da-bc8c-e865d3d26db6/MTA-Software-Development-Fundamentals-2019.png"
+               Alt="MTA: Software Development Fundamentals - Certified 2019" />
+        <Badge Href="https://www.youracclaim.com/badges/135dc596-968c-4d40-9ca9-547ff4b98966"
+               Img="https://images.youracclaim.com/size/680x680/images/78e39333-d0db-4931-b231-13bdb37040cc/Programming_in_C_23-01.png"
+               Alt="Exam 483: Programming in C#" Delay="0.12" />
     </div>
 
     <div class="row">
-        <div><h5>   Certifications and exams passed:</h5></div>
+        <h5>Languages I feel confident at:</h5>
     </div>
-    <div class="row mb-4">
-        <div class="col-4 col-md-3 col-lg-2">
-            <a class="link" href="https://www.youracclaim.com/badges/a683933e-c79a-4cae-9dea-a71b705a57ce">
-                <img class="img-fluid" src="https://images.youracclaim.com/size/680x680/images/4178e678-e9c8-42da-bc8c-e865d3d26db6/MTA-Software-Development-Fundamentals-2019.png"
-                     alt="MTA: Software Development Fundamentals - Certified 2019" />
-            </a>
+    <div class="row mb-1">
+        @*<Image Src="https://image.freepik.com/free-vector/brush-stroke-flag-united-kingdom_1102-1017.jpg"
+               Title="English 🙂" />*@
+        <Image Src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/C_Sharp_logo.svg/1920px-C_Sharp_logo.svg.png"
+               Title="C#" />
+        <Image Src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"
+               Title="HTML" Delay="0.1" />
+        <Image Src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/726px-CSS3_logo_and_wordmark.svg.png"
+               Title="CSS" Delay="0.2" />
+        <Image Src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png"
+               Title="Bootstrap" Delay="0.3" />
+        <Image Src="https://cdn.db2tutorial.com/wp-content/uploads/2019/03/db2-tutorial.png"
+               Title="SQL" Delay="0.4" />
+    </div>
+    @*<div class="row">
+            <h5>Design patterns:</h5>
         </div>
-        <div class="col-4 col-md-3 col-lg-2">
-            <a href="https://www.youracclaim.com/badges/135dc596-968c-4d40-9ca9-547ff4b98966">
-                <img class="img-fluid" src="https://images.youracclaim.com/size/680x680/images/78e39333-d0db-4931-b231-13bdb37040cc/Programming_in_C_23-01.png"
-                     alt="Exam 483: Programming in C#" />
-            </a>
-        </div>
+        <div class="row mb-4">
+            <ProgressBar Name="DI" Value="100" />
+            <ProgressBar Name="DDD" Value="100" />
+            <ProgressBar Name="CQRS" Value="100" />
+            <ProgressBar Name="MVVM" Value="100" />
+            <ProgressBar Name="MVC" Value="100" />
+        </div>*@
+
+    <div class="row">
+        <h5>Technologies I learn:</h5>
+    </div>
+    <div class="row mb-1">
+        <Image Src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/.NET_Core_Logo.svg/1200px-.NET_Core_Logo.svg.png"
+               Title="ASP.NET Core 3.1" />
+        <Image Src="https://codeopinion.com/wp-content/uploads/2017/10/Bitmap-MEDIUM_Entity-Framework-Core-Logo_2colors_Square_Boxed_RGB.png"
+               Title="EF Core" Delay="0.1" />
+        <Image Src="https://external-preview.redd.it/bS0gp46h0kZbUPSYmNqb8x3oBW4Vp9MRMzK6eb4wl7Q.jpg?auto=webp&s=3e43a464c2b169288ee8b0abd5201ca547356f79"
+               Title="Blazor" Delay="0.2" />
+        <Image Src="https://avatars0.githubusercontent.com/u/10635672?s=400&v=4"
+               Title="Identity Server" Delay="0.3" />
+        @*<ProgressBar Name="ASP.NET Core MVC" Value="70" />
+            <ProgressBar Name=".NET Core WPF" Value="70" />*@
+    </div>
+
+    <div class="row">
+        <h5>Tools I know:</h5>
+    </div>
+    <div class="row mb-1">
+        <Image Src="https://visualstudio.microsoft.com/wp-content/uploads/2019/06/BrandVisualStudioWin2019-3.svg"
+               Title="Microsoft Visual Studio" />
+        <Image Src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+               Title="GitHub" Delay="0.1" />
+        <Image Src="/images/logo/jiraLogo.png"
+               Title="Jira" Delay="0.2" />
+        <Image Src="/images/logo/confluenceLogo.png"
+               Title="Confluence" Delay="0.3" />
+        <Image Src="https://www.postman.com/assets/logos/postman-logo-stacked.svg"
+               Title="Postman" Delay="0.4" />
     </div>
 
 </div>
