@@ -44,11 +44,15 @@
           "dependencies": {
             "BlazorAnimate": {
               "target": "Package",
-              "version": "[2.0.0, )"
+              "version": "[3.0.0, )"
             },
             "Microsoft.VisualStudio.Web.BrowserLink": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "NETCore.MailKit": {
+              "target": "Package",
+              "version": "[2.0.3, )"
             }
           },
           "imports": [

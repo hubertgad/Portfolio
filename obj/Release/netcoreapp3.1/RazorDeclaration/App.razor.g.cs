@@ -83,6 +83,13 @@ using BlazorAnimate;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "C:\Users\player_one\source\repos\Portfolio\_Imports.razor"
+using Portfolio.Email;
+
+#line default
+#line hidden
+#nullable disable
     public partial class App : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998

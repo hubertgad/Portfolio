@@ -1,6 +1,6 @@
 ﻿@page "/projects/p2"
 
-<div class="container vw-100">
+<div class="container">
     <div class="mb-3">
         <NavLink class="btn btn-content" href="/projects" Match="NavLinkMatch.All">Go back to projects</NavLink>
     </div>
@@ -10,15 +10,15 @@
     <div class="my-2">
         <h3>What?</h3>
         <span>
-            This is <b>my first project</b> in ASP.NET and I know that it is far from perfect. This project is more academic than practical, real-world application. 
-            <b>Repeat</b> allow to create tests containing multi-choice questions and share them for other users. An user can take a test and see it's summary with test result.
+            This is <b>my first project</b> in ASP.NET and I know that it is far from perfect. This project is more academic than practical, real-world application.
+            <b>Repeat</b> allow to create tests containing multi-choice questions and share them for other users. An user can take a test and see the summary with test result afterwards.
         </span>
     </div>
 
     <div class="my-2">
         <h3>Why?</h3>
         <span>
-            <i>Repetitio est mater studiorum</i>, somebody said. I learn a lot and I am aware that repetition is very important part of learning process.
+            I learn a lot and I am aware that repetition is very important part of learning process.
         </span>
     </div>
 
@@ -27,24 +27,14 @@
         <span>
             This project aims Domain-Driven Design pattern. 
             It is also full of CRUD operations. 
-            Site is based on Razor Pages and MSSQL database. 
+            Site is based on Razor Pages and uses MSSQL database. 
             I have used Entity Framework Core as an ORM system.
         </span>
     </div>
 
     <div class="my-2">
-        <h3>Pictures</h3>
-        <PhotoGallery Images="Images" />
-    </div>
-
-    <div class="my-2">
         <h3>Resources</h3>
         <NavLink class="btn btn-content" href="https://repeat.hubertgad.net/">Visit Repeat</NavLink>
-        <button class="btn btn-content">GitHub Repository</button>
+        <NavLink class="btn btn-content" href="https://github.com/hubertgad/Repeat">GitHub Repository</NavLink>
     </div>
 </div>
-
-@code {
-    public List<string> Images { get; set; } = new List<string>
-    { "/images/pika.png", "/images/pika.png", "/images/pika.png", "/images/pika.png", "/images/pika.png" };
-}

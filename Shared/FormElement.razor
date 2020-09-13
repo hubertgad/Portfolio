@@ -1,0 +1,14 @@
+﻿<Animate Animation="Animations.FadeIn" Duration="TimeSpan.FromSeconds(1)" Delay="TimeSpan.FromSeconds(Delay)">
+    <div class="form-group">
+        <label class="col-12">
+            @Label:
+            @ChildContent
+        </label>
+    </div>
+</Animate>
+
+@code {
+    [Parameter] public string Label { get; set; }
+    [Parameter] public RenderFragment ChildContent { get; set; }
+    [Parameter] public double Delay { get; set; }
+}

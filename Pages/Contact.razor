@@ -1,7 +1,57 @@
 ﻿@page "/contact"
 
-<h3>Contact</h3>
+@inject IEmailService EmailService
 
-@code {
+<Animate Animation="Animations.FadeIn" Duration="TimeSpan.FromSeconds(1)">
+    <h5 class="mb-3">You can easily contact me through following form or send an email to <b>contact@hubertgad.net</b>.</h5>
+</Animate>
 
+<EditForm Model="Model" OnValidSubmit="async () => await EmailService.SendAsync(this.Model)">
+
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <FormElement Label="Name" Delay="0.1">
+        <input class="form-control" @bind-value="Model.Name" aria-label="Name" />
+    </FormElement>
+
+    <FormElement Label="Email" Delay="0.2">
+        <input class="form-control" @bind-value="Model.Email" aria-label="E-mail address" />
+    </FormElement>
+
+    <FormElement Label="Phone" Delay="0.3">
+        <input class="form-control" @bind-value="Model.Phone" aria-label="Phone number" />
+    </FormElement>
+
+    <FormElement Label="Subject" Delay="0.4">
+        <input class="form-control" @bind-value="Model.Subject" aria-label="Subject" />
+    </FormElement>
+
+    <FormElement Label="Message" Delay="0.5">
+        <InputTextArea class="form-control" @bind-Value="Model.Message" aria-label="Message" />
+    </FormElement>
+
+    <Animate Animation="Animations.FadeIn" Duration="TimeSpan.FromSeconds(1)" Delay="TimeSpan.FromSeconds(0.6)">
+        @if (Model.Status == Status.Sending)
+        {
+            <div class="btn btn-content btn-block col-6 my-3 mx-auto">Sending message...</div>
+        }
+        else if (Model.Status == Status.Error)
+        {
+            <div class="btn btn-error btn-block col-6 my-3 mx-auto">Error</div>
+        }
+        else if (Model.Status == Status.Done)
+        {
+            <div class="btn btn-done btn-block col-6 my-3 mx-auto">A message has been sent.</div>
+        }
+        else
+        {
+            <button type="submit" class="btn btn-content btn-block col-6 my-3 mx-auto" aria-label="Submit">Submit</button>
+        }
+    </Animate>
+
+</EditForm>
+
+@code { 
+    public EmailModel Model { get; set; } = new EmailModel(); 
 }

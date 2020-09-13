@@ -1,6 +1,6 @@
 ﻿@page "/projects/p1"
 
-<div class="container vw-100">
+<div class="container">
     <div class="mb-3">
         <NavLink class="btn btn-content" href="/projects" Match="NavLinkMatch.All">Go back to projects</NavLink>
     </div>
@@ -12,7 +12,7 @@
         <span>
             Polyzynger is a simple WPF application that <b>finds</b> the latest version, <b>downloads</b> and <b>installs</b> software on Windows.
             Also, it additionally copies some resources and executes PowerShell scripts if necessary.
-            To ensure that it will easily run even on an older and not updated Windows OS <b class="polyzynger">Polyzynger</b> uses .NET Framework 4.7.
+            To ensure that it will easily run even on an older and not updated Windows OS <b class="polyzynger">Polyzynger</b> uses .NET Framework 4.6.1.
         </span>
     </div>
 
@@ -58,12 +58,15 @@
 
     <div class="my-2">
         <h3>Resources</h3>
-        <button class="btn btn-content">Download Link</button>
-        <button class="btn btn-content">GitHub Repository</button>
+        <NavLink class="btn btn-content" href="https://hubertgad.net/downloads/Polyzynger.exe">Download Polyzynger.exe</NavLink>
+        <NavLink class="btn btn-content" href="https://github.com/hubertgad/Polyzynger">GitHub Repository</NavLink>
     </div>
 </div>
 
 @code {
-    public List<string> Images { get; set; } = new List<string>
-        { "/images/polyzynger.png", "/images/polyzynger2.png" };
+    public List<(string, string)> Images { get; set; } = new List<(string, string)> 
+    { 
+        ("/images/polyzynger/polyzynger.png", "Picture 1"), 
+        ("/images/polyzynger/polyzynger2.png", "Picture 2")
+    };
 }

@@ -10,15 +10,6 @@
 @code {
     [Parameter] public string Href { get; set; }
     [Parameter] public string Title { get; set; }
-    [Parameter] public string Image { get; set; }
+    [Parameter] public string Image { get; set; } = "/images/pika.png";
     [Parameter] public double Delay { get; set; } = 0;
-
-    protected override void OnParametersSet()
-    {
-        base.OnParametersSet();
-        if (string.IsNullOrEmpty(Image))
-        {
-            Image = "/images/pika.png";
-        }
-    }
 }

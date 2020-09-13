@@ -1,30 +1,23 @@
-﻿@if (Zoom)
-{
-    <Animate Animation="Animations.Fade" class="zoom-bg" @onclick="Hide" >
-        <img src="@SelectedImg"
-                class="col-11 m-auto img-fluid img-thumbnail zoom" />
-    </Animate>
-}
-
-<div>
+﻿<div>
     @foreach (var image in Images)
     {
-        <img class="col-2 mx-2 img-fluid img-thumbnail photo" 
-             src="@image" @onclick="() => Show(image)" />
+        <img class="col-2 mx-2 img-fluid img-thumbnail photo"
+             src="@image.src"
+             alt="@image.alt"
+             @onclick="() => SelectedImg = image" />
     }
 </div>
 
-@code {
-    [Parameter] public List<string> Images { get; set; }
-    public bool Zoom { get; set; } = false;
-    public string Style { get; set; } = "";
-    public string SelectedImg { get; set; } = "";
+@if (SelectedImg != (string.Empty, string.Empty))
+{
+    <Animate Animation="Animations.Fade" class="zoom-bg" @onclick="() => SelectedImg = (string.Empty, string.Empty)">
+        <img src="@SelectedImg.src"
+             alt="@SelectedImg.alt"
+             class="col-11 m-auto img-fluid img-thumbnail zoom" />
+    </Animate>
+}
 
-    public void Toogle() => Zoom = !Zoom;
-    public void Show(string img)
-    {
-        SelectedImg = img;
-        Zoom = true;
-    }
-    public void Hide() => Zoom = false;
+@code {
+    [Parameter] public List<(string src, string alt)> Images { get; set; }
+    public (string src, string alt) SelectedImg { get; set; } = (string.Empty, string.Empty);
 }
