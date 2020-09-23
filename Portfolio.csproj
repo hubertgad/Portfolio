@@ -3,7 +3,13 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UserSecretsId>436310d6-f75b-4fab-a2fd-65f009705373</UserSecretsId>
+    <Authors>Hubert Gad</Authors>
+    <Company>hubertgad.net</Company>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove=".gitignore" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="BlazorAnimate" Version="3.0.0" />
