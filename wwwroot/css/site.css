@@ -21,7 +21,7 @@ html, body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     background-image: url(../images/bg.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -207,6 +207,7 @@ app {
     z-index: 10;
     border: none;
     border-radius: 0;
+    margin: 5px;
 }
 
     .btn-content:hover {
@@ -267,10 +268,6 @@ app {
     white-space: nowrap;
     line-height: 60px; /* Vertically center the text there */
 }
-
-    .footer::after {
-        
-    }
 
 .project {
     text-align: center;
@@ -356,10 +353,6 @@ app {
     font-weight: 600;
 }
 
-.zaznacz {
-    border: 1px solid red;
-}
-
 .polyzynger {
     color: #0093d9;
     font-style: italic;
@@ -367,19 +360,6 @@ app {
 
 .orange {
     color: var(--firstColor);
-}
-
-.progress {
-    margin: 5px;
-    height: auto;
-    font-size: medium;
-}
-
-.progress-bar {
-    background-color: var(--firstColor);
-    color: black;
-    font-weight: 600;
-    padding: 5px;
 }
 
 span {
