@@ -6,3 +6,5 @@ artifacts/
 .vscode/
 .dotnet/
 *.binlog
+.vs/Portfolio/v16/.suo
+.vs/Portfolio/DesignTimeBuild/.dtbcache.v2
