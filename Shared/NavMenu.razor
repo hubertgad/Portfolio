@@ -1,22 +1,22 @@
 ﻿<nav class="navbar-expand-md navbar-dark bg-black sticky-top">
 
-    <div class="navbar-toggler bg-black text-white border-0 rounded-0 text-center" type="button" data-toggle="collapse" data-target="#navmenu"
+    <div class="navbar-toggler bg-black text-white border-0 rounded-0 text-right pt-2" data-toggle="collapse" data-target="#navmenu"
          aria-controls="#navmenu" aria-expanded="false" aria-label="Navigation toogler">
-        <span class="navbar-toggler-icon"></span> Menu
+        Menu <span class="navbar-toggler-icon"></span>
     </div>
 
-    <div class="collapse navbar-collapse custom-navmenu pt-1" id="navmenu">
+    <div class="collapse navbar-collapse custom-navmenu pt-2" id="navmenu">
         <ul class="navbar-nav m-md-auto">
-            <li class="nav-item">
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                 <NavLink class="nav-link btn-menu mr-md-2" href="" Match="NavLinkMatch.All">Intro</NavLink>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                 <NavLink class="nav-link btn-menu mr-md-2" href="expertise">Expertise</NavLink>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                 <NavLink class="nav-link btn-menu mr-md-2" href="projects">Projects</NavLink>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                 <NavLink class="nav-link btn-menu mr-md-2" href="contact">Contact</NavLink>
             </li>
         </ul>
