@@ -8,3 +8,6 @@ artifacts/
 *.binlog
 .vs/Portfolio/v16/.suo
 .vs/Portfolio/DesignTimeBuild/.dtbcache.v2
+Properties/PublishProfiles/hubertgad.net - Web Deploy.pubxml
+appsettings.Production.json
+.config/dotnet-tools.json
